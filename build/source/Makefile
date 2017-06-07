@@ -111,6 +111,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+source/CMakeFiles/aufgabe1.dir/rule:
+	cd /home/unix/LocalRepo/Programmiersprachen/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/aufgabe1.dir/rule
+.PHONY : source/CMakeFiles/aufgabe1.dir/rule
+
+# Convenience name for target.
+aufgabe1: source/CMakeFiles/aufgabe1.dir/rule
+
+.PHONY : aufgabe1
+
+# fast build rule for target.
+aufgabe1/fast:
+	cd /home/unix/LocalRepo/Programmiersprachen/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f source/CMakeFiles/aufgabe1.dir/build.make source/CMakeFiles/aufgabe1.dir/build
+.PHONY : aufgabe1/fast
+
+# Convenience name for target.
 source/CMakeFiles/tests.dir/rule:
 	cd /home/unix/LocalRepo/Programmiersprachen/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/tests.dir/rule
 .PHONY : source/CMakeFiles/tests.dir/rule
@@ -124,6 +139,33 @@ tests: source/CMakeFiles/tests.dir/rule
 tests/fast:
 	cd /home/unix/LocalRepo/Programmiersprachen/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/build
 .PHONY : tests/fast
+
+aufgabe1.o: aufgabe1.cpp.o
+
+.PHONY : aufgabe1.o
+
+# target to build an object file
+aufgabe1.cpp.o:
+	cd /home/unix/LocalRepo/Programmiersprachen/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f source/CMakeFiles/aufgabe1.dir/build.make source/CMakeFiles/aufgabe1.dir/aufgabe1.cpp.o
+.PHONY : aufgabe1.cpp.o
+
+aufgabe1.i: aufgabe1.cpp.i
+
+.PHONY : aufgabe1.i
+
+# target to preprocess a source file
+aufgabe1.cpp.i:
+	cd /home/unix/LocalRepo/Programmiersprachen/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f source/CMakeFiles/aufgabe1.dir/build.make source/CMakeFiles/aufgabe1.dir/aufgabe1.cpp.i
+.PHONY : aufgabe1.cpp.i
+
+aufgabe1.s: aufgabe1.cpp.s
+
+.PHONY : aufgabe1.s
+
+# target to generate assembly for a file
+aufgabe1.cpp.s:
+	cd /home/unix/LocalRepo/Programmiersprachen/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f source/CMakeFiles/aufgabe1.dir/build.make source/CMakeFiles/aufgabe1.dir/aufgabe1.cpp.s
+.PHONY : aufgabe1.cpp.s
 
 tests.o: tests.cpp.o
 
@@ -159,8 +201,12 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... aufgabe1"
 	@echo "... rebuild_cache"
 	@echo "... tests"
+	@echo "... aufgabe1.o"
+	@echo "... aufgabe1.i"
+	@echo "... aufgabe1.s"
 	@echo "... tests.o"
 	@echo "... tests.i"
 	@echo "... tests.s"
